@@ -10,4 +10,8 @@ class WelcomeController < ApplicationController
   
   def docfive
   end
+  
+  def contact
+    
+  end
 end

@@ -1,8 +1,9 @@
 Giroudsnipple::Application.routes.draw do
-  get "welcome/home"
-  get "welcome/help"
-  get "welcome/about"
-  get "welcome/docfive"
+  root 'welcome#home'
+  match '/help', to: 'welcome#help', via: 'get'
+  match '/about', to: 'welcome#help', via: 'get'
+  match '/docfive', to: 'welcome#docfive', via: 'get'
+  match '/contact', to: 'welcome#contact', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
