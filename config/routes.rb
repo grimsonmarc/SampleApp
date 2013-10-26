@@ -1,4 +1,5 @@
 Giroudsnipple::Application.routes.draw do
+  resources :users
   root 'welcome#home'
   match '/help', to: 'welcome#help', via: 'get'
   match '/about', to: 'welcome#about', via: 'get'
