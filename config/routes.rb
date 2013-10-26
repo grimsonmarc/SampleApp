@@ -1,7 +1,7 @@
 Giroudsnipple::Application.routes.draw do
   root 'welcome#home'
   match '/help', to: 'welcome#help', via: 'get'
-  match '/about', to: 'welcome#help', via: 'get'
+  match '/about', to: 'welcome#about', via: 'get'
   match '/docfive', to: 'welcome#docfive', via: 'get'
   match '/contact', to: 'welcome#contact', via: 'get'
   
