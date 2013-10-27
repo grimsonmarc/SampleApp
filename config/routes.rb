@@ -1,10 +1,9 @@
-Giroudsnipple::Application.routes.draw do
+SampleApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root 'welcome#home'
   match '/help', to: 'welcome#help', via: 'get'
   match '/about', to: 'welcome#about', via: 'get'
-  match '/docfive', to: 'welcome#docfive', via: 'get'
   match '/contact', to: 'welcome#contact', via: 'get'
   
   match '/new_text', to: 'latin_texts#new', via: 'get'

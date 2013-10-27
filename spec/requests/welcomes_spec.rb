@@ -10,7 +10,7 @@ describe "Welcome" do
     
     it "Should have the right title" do
       visit root_path
-      expect(page).to have_title('Giroud\'s Nipple')
+      expect(page).to have_title('Sample App')
     end
   end
   
@@ -22,7 +22,7 @@ describe "Welcome" do
     
     it "Should have the right title" do
       visit help_path
-      expect(page).to have_title('Giroud\'s Nipple | Help')
+      expect(page).to have_title('Sample App | Help')
     end
   end
   
@@ -34,7 +34,7 @@ describe "Welcome" do
     
     it "Should have the right title" do
       visit about_path
-      expect(page).to have_title('Giroud\'s Nipple | About Us')
+      expect(page).to have_title('Sample App | About Us')
     end
   end
 end

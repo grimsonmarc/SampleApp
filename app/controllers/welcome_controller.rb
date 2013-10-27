@@ -8,9 +8,6 @@ class WelcomeController < ApplicationController
   def about
   end
   
-  def docfive
-  end
-  
   def contact
     
   end
